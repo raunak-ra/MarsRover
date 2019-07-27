@@ -8,7 +8,7 @@ namespace MarsRover
 {
     public class RoverFinalCoordinate
     {
-        public string GetFinalCoordinate(RoverPosition position)
+        public string GetFinalCoordinate(RoverLocationDetails position)
         {
             return $"{position.XCurrent} {position.YCurrent} {position.RoverDirection}";
         }

@@ -8,7 +8,7 @@ namespace MarsRover
 {
     class BoundaryCheckor
     {
-        public bool CheckBoundary(RoverPosition position)
+        public bool CheckBoundary(RoverLocationDetails position)
         {
             switch (position.RoverDirection)
             {
