@@ -11,7 +11,6 @@ C:\Users\rsingh\Desktop\22july\MarsRover\MarsRoverTest\bin\Debug\xunit.core.dll
 C:\Users\rsingh\Desktop\22july\MarsRover\MarsRoverTest\bin\Debug\xunit.execution.desktop.dll
 C:\Users\rsingh\Desktop\22july\MarsRover\MarsRoverTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\rsingh\Desktop\22july\MarsRover\MarsRoverTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
-C:\Users\rsingh\Desktop\22july\MarsRover\MarsRoverTest\bin\Debug\xunit.abstractions.xml
 C:\Users\rsingh\Desktop\22july\MarsRover\MarsRoverTest\bin\Debug\xunit.assert.xml
 C:\Users\rsingh\Desktop\22july\MarsRover\MarsRoverTest\bin\Debug\xunit.core.xml
 C:\Users\rsingh\Desktop\22july\MarsRover\MarsRoverTest\bin\Debug\xunit.execution.desktop.xml
@@ -22,3 +21,6 @@ C:\Users\rsingh\Desktop\22july\MarsRover\MarsRoverTest\obj\Debug\MarsRoverTest.p
 C:\Users\rsingh\Desktop\22july\MarsRover\MarsRoverTest\bin\Debug\MarsRover.exe
 C:\Users\rsingh\Desktop\22july\MarsRover\MarsRoverTest\bin\Debug\MarsRover.pdb
 C:\Users\rsingh\Desktop\22july\MarsRover\MarsRoverTest\bin\Debug\MarsRover.exe.config
+C:\Users\rsingh\Desktop\22july\MarsRover\MarsRoverTest\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\Users\rsingh\Desktop\22july\MarsRover\MarsRoverTest\bin\Debug\xunit.runner.reporters.net452.dll
+C:\Users\rsingh\Desktop\22july\MarsRover\MarsRoverTest\bin\Debug\xunit.runner.utility.net452.dll
