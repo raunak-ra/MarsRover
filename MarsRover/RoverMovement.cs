@@ -8,8 +8,8 @@ namespace MarsRover
 {
    public class RoverMovement 
     {
-        private Turn turn;
-        private Move move;
+        private Turn turn = new Turn();
+        private Move move = new Move();
 
         public void PerformAction(char key, RoverPosition position)
         {

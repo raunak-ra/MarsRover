@@ -45,6 +45,7 @@
     <Compile Include="BoundaryCheckor.cs" />
     <Compile Include="CommandProcessor.cs" />
     <Compile Include="Move.cs" />
+    <Compile Include="Point.cs" />
     <Compile Include="RoverMovement.cs" />
     <Compile Include="RoverFinalCoordinate.cs" />
     <Compile Include="RoverPosition.cs" />
