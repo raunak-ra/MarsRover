@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MarsRover
 {
-    class Rotator : IRoverAction
+    class Left : IRoverAction
     {
 
         Dictionary<string, int> DirectionValue = new Dictionary<string, int>()
@@ -18,32 +18,10 @@ namespace MarsRover
             {0, "north"} , {1, "northeast"}, {2, "east"}, {3, "southeast"}, {4, "south"},{5, "southwest" }, {6, "west" }, {7, "northwest"}
         };
 
-        public void PerformAction(RoverLocationDetails position, char key)
-        {
-            switch(key)
-            {
-                case 'R':
-                    position.RoverDirection =    ValueDirection[(DirectionValue[position.RoverDirection] + 1) % 8];
-                    break;
-                case 'L':
-                    position.RoverDirection = ValueDirection[(DirectionValue[position.RoverDirection] + 7) % 8];
-                    break;
-
-            }           
-        }
-
-        public void PerformAction()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void RotateLeft(RoverLocationDetails position)
-        {
-            position.RoverDirection = ValueDirection[(DirectionValue[position.RoverDirection] + 1) % 8];
-        }
-        public void RotateRight(RoverLocationDetails position)
+        public void PerformAction(RoverLocationDetails position)
         {
             position.RoverDirection = ValueDirection[(DirectionValue[position.RoverDirection] + 7) % 8];
         }
+
     }
 }

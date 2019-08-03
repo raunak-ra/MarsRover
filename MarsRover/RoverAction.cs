@@ -8,15 +8,14 @@ namespace MarsRover
 {
    public class RoverAction 
     {
-        private Rotator turn = new Rotator();
-        private RoverMovement move = new RoverMovement();
 
-        public void PerformAction(char key, RoverLocationDetails position)
+        public static IRoverAction DoAction(char key)
         {
-            if (key == 'L' || key == 'R') turn.Rotate(position, key);
-            else if (key == 'F') move.PerformAction(position);
+            if (key == 'F') return new Forward();
+            else if (key == 'L') return new Left();
+            else if (key == 'R') return new Right();
+            else return null;
         }
-
       
     }
 }

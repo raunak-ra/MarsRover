@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MarsRover
 {
-    class RoverMovement : IRoverAction
+    class Forward : IRoverAction
     {
         Dictionary<string,int> dictionaryX = new Dictionary<string, int>()
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MarsRover
 {
-    interface IRoverAction
+    public interface IRoverAction
     {
         void PerformAction(RoverLocationDetails roverLocationDetails);
     }

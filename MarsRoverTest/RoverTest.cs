@@ -22,10 +22,12 @@ namespace MarsRoverTest
             position = new RoverLocationDetails(1,1,10,10,"north");
            
             string command = "FFFFF";
-            RoverAction obj = new RoverAction();
+            
             foreach (var key in command)
             {
-                obj.PerformAction(key, position);
+                IRoverAction action = RoverAction.DoAction(key);
+                action.PerformAction(position);
+
             }
             
             RoverFinalCoordinate mars = new RoverFinalCoordinate();
@@ -36,12 +38,12 @@ namespace MarsRoverTest
         public void Testing_For_Left()
         {
             position = new RoverLocationDetails(1, 1, 10, 10, "north");
-           
+
             string command = "L";
-            RoverAction obj = new RoverAction();
             foreach (var key in command)
             {
-                obj.PerformAction(key, position);
+                IRoverAction action = RoverAction.DoAction(key);
+                action.PerformAction(position);
             }
 
             RoverFinalCoordinate mars = new RoverFinalCoordinate();
@@ -55,10 +57,10 @@ namespace MarsRoverTest
             position.XLower = 0; position.XUpper = 10;
             position.YLower = 0; position.YUpper = 10;
             string command = "RR";
-            RoverAction obj = new RoverAction();
             foreach (var key in command)
             {
-                obj.PerformAction(key, position);
+                IRoverAction action = RoverAction.DoAction(key);
+                action.PerformAction(position);
             }
 
             RoverFinalCoordinate mars = new RoverFinalCoordinate();
@@ -69,12 +71,13 @@ namespace MarsRoverTest
         public void Testing_For_Boundary()
         {
             position = new RoverLocationDetails(10, 10, 10, 10, "north");
-           
+
             string command = "FFFFF";
-            RoverAction obj = new RoverAction();
+           
             foreach (var key in command)
             {
-                obj.PerformAction(key, position);
+                IRoverAction action = RoverAction.DoAction(key);
+                action.PerformAction(position);
             }
 
             RoverFinalCoordinate mars = new RoverFinalCoordinate();
@@ -84,12 +87,13 @@ namespace MarsRoverTest
         public void Testing_For_Misc_Command1()
         {
             position = new RoverLocationDetails(1, 1, 10, 10, "east");
-            
+
             string command = "FLLFR";
-            RoverAction obj = new RoverAction();
+            
             foreach (var key in command)
-            {
-                obj.PerformAction(key, position);
+            {           
+                IRoverAction action = RoverAction.DoAction(key);
+                action.PerformAction(position);
             }
 
             RoverFinalCoordinate mars = new RoverFinalCoordinate();
@@ -100,12 +104,13 @@ namespace MarsRoverTest
         public void Testing_For_Misc_Command2()
         {
             position = new RoverLocationDetails(1, 2, 5, 5, "north");
-           
+
             string command = "LFLFLFLFF";
-            RoverAction obj = new RoverAction();
+            
             foreach (var key in command)
             {
-                obj.PerformAction(key, position);
+                IRoverAction action = RoverAction.DoAction(key);
+                action.PerformAction(position);
             }
 
             RoverFinalCoordinate mars = new RoverFinalCoordinate();
@@ -116,12 +121,14 @@ namespace MarsRoverTest
         public void Testing_For_Misc_Command3()
         {
             position = new RoverLocationDetails(3, 3, 5, 5, "east");
-            
+
             string command = "FFRFFRFRRF";
-            RoverAction obj = new RoverAction();
+           
             foreach (var key in command)
             {
-                obj.PerformAction(key, position);
+                IRoverAction action = RoverAction.DoAction(key);
+                action.PerformAction(position);
+
             }
 
             RoverFinalCoordinate mars = new RoverFinalCoordinate();
