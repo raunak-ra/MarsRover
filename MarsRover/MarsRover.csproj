@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="BoundaryCheckor.cs" />
     <Compile Include="CommandProcessor.cs" />
+    <Compile Include="IRoverAction.cs" />
     <Compile Include="RoverMovement.cs" />
     <Compile Include="RoverAction.cs" />
     <Compile Include="RoverFinalCoordinate.cs" />

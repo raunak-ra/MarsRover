@@ -14,7 +14,7 @@ namespace MarsRover
         public void PerformAction(char key, RoverLocationDetails position)
         {
             if (key == 'L' || key == 'R') turn.Rotate(position, key);
-            else if (key == 'F') move.MoveForward(position);
+            else if (key == 'F') move.PerformAction(position);
         }
 
       

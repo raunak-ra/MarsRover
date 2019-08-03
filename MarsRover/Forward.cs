@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MarsRover
 {
-    class RoverMovement
+    class RoverMovement : IRoverAction
     {
         Dictionary<string,int> dictionaryX = new Dictionary<string, int>()
         {
@@ -16,19 +16,19 @@ namespace MarsRover
         {
             { "north", 1} , {"northeast",1 }, {"east", 0 }, {"southeast", -1 }, {"south", -1 },{"southwest", -1 }, {"west", 0 }, {"northwest", 1 }
         };
+      
 
-        public void MoveForward(RoverLocationDetails position)
+        public void PerformAction(RoverLocationDetails roverLocationDetails)
         {
+            
             BoundaryCheckor boundarycheckor = new BoundaryCheckor();
-            if (boundarycheckor.CheckBoundary(position))
+            if (boundarycheckor.CheckBoundary(roverLocationDetails))
             {
 
-                position.XCurrent += dictionaryX[position.RoverDirection];
-                position.YCurrent += dictionaryY[position.RoverDirection];
-                
+                roverLocationDetails.XCurrent += dictionaryX[roverLocationDetails.RoverDirection];
+                roverLocationDetails.YCurrent += dictionaryY[roverLocationDetails.RoverDirection];
+
             }
         }
-        
-
     }
 }
